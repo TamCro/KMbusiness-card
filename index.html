@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Card</title>
+
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .swiper {
+      width: 90%;
+      max-width: 400px;
+    }
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://i.imgur.com/sjtjUx2.png" alt="Front" /></div>
+      <div class="swiper-slide"><img src="https://i.imgur.com/KBsyjD6.png" alt="Back" /></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 10,
+      grabCursor: true,
+    });
+  </script>
+</body>
+</html>
